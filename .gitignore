@@ -1,0 +1,53 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+client/build/
+client/dist/
+server/dist/
+server/build/
+
+# Environment variables (API keys, database credentials, etc.)
+client/.env
+client/.env.local
+server/.env
+server/.env.local
+server/.env.test
+
+# Logs
+logs/
+server/logs/
+client/logs/
+*.log
+*.log.*
+
+# Temporary files and caches
+tmp/
+temp/
+server/tmp/
+server/temp/
+client/tmp/
+client/temp/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+
+# Ignore compiled TypeScript files (if using TypeScript)
+server/**/*.tsbuildinfo
+server/tsconfig.tsbuildinfo
+
+# Ignore lock files (optional, remove if you want to track them)
+# client/package-lock.json
+# client/yarn.lock
+# server/package-lock.json
+# server/yarn.lock
+
+# Ignore Git-related files
+.git/

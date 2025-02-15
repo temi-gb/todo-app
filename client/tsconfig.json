@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Updated to es6
+    "lib": ["dom", "es6"], // Updated to es6
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src"
+  ]
+}
