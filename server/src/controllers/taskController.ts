@@ -1,8 +1,8 @@
-import { Request, Response, RequestHandler } from 'express';
+import { Request, Response } from 'express';
 import { getTasks, addTask, deleteAllTasks, markTaskAsComplete } from '../models/taskModels';
 import { handleAPIError } from '../utils/errorHandler';
 
-export const getAllTasks: RequestHandler = (req: Request, res: Response) => {
+export const getAllTasks = (req: Request, res: Response) => {
   try {
     const tasks = getTasks();
     res.status(200).json(tasks);
@@ -11,7 +11,7 @@ export const getAllTasks: RequestHandler = (req: Request, res: Response) => {
   }
 };
 
-export const createTask: RequestHandler = (req: Request, res: Response) => {
+export const createTask = (req: Request, res: Response) => {
   try {
     const { title } = req.body;
     const newTask = addTask(title);
@@ -21,7 +21,7 @@ export const createTask: RequestHandler = (req: Request, res: Response) => {
   }
 };
 
-export const removeAllTasks: RequestHandler = (req: Request, res: Response) => {
+export const removeAllTasks = (req: Request, res: Response) => {
   try {
     deleteAllTasks();
     res.status(204).send();
@@ -30,7 +30,7 @@ export const removeAllTasks: RequestHandler = (req: Request, res: Response) => {
   }
 };
 
-export const completeTask: RequestHandler = (req: Request, res: Response): void => {
+export const completeTask = (req: Request, res: Response): void => {
   try {
     const taskId = parseInt(req.params.id, 10);
     const updatedTask = markTaskAsComplete(taskId);
