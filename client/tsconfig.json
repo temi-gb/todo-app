@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6", // Updated to es6
-    "lib": ["dom", "es6"], // Updated to es6
+    "target": "es6",
+    "lib": ["dom", "es6"],
     "allowJs": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
