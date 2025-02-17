@@ -34,7 +34,6 @@ const TaskList = () => {
       <h2>To-Do List</h2>
       <ul className="task-list">
         {tasks.map((task) => (
-          // <li key={task.id}>
           <li key={task.id} className={task.completed ? "completed" : ""}>
             <input
               type="checkbox"
